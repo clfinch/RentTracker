@@ -1,13 +1,15 @@
 package com.cody.renttracker;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
+/*
+@Author Cody Finch
+Purpose: This is the starting activity, it launches a fragment of the main hub page.
+ */
 public class RentTrackerActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rent_tracker);
-    }
-}
+
+    protected Fragment createFragment(){
+        return new HomeFragment();
+    }// End Constructor
+}// end RentTrackerActivity
