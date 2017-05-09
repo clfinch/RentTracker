@@ -19,6 +19,7 @@ public class HomeFragment extends Fragment {
 
     private RecyclerView mMonthRecyclerView;
     private List<Tenant> mTenants;
+    private List<Month> mMonths;
     private HomeAdapter mAdapter;
 
     @Override
@@ -26,7 +27,8 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_list_month, container, false);
         mMonthRecyclerView = (RecyclerView) v.findViewById(R.id.month_recycler_view);
         mMonthRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        //TODO Reterieve List of Tenants
+        //TODO Reterieve List of Months
+        l
 
         mAdapter = new HomeAdapter(mTenants);
         mMonthRecyclerView.setAdapter(mAdapter);

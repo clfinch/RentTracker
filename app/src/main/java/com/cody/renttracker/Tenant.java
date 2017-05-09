@@ -8,25 +8,23 @@ import java.util.UUID;
 
 public class Tenant {
     private String mID;
-    private String mFirstName;
-    private String mLastName;
+    private String mName;
 
     // Constructor creates a tenant for the household
-    public Tenant(String aFirstName, String aLastName){
-        mFirstName = aFirstName;
-        mLastName = aLastName;
+    public Tenant(String aName){
+        mName = aName;
         mID = UUID.randomUUID().toString();
     }
 
     // Member getter's and setters
     private String getName(){
-        return mFirstName + " " + mLastName;
+        return mName;
     }
     private String getTenantID(){return mID;}
 
     private void setFirstName(String aName){
-        mFirstName = aName;
+        mName = aName;
     }
-    private void setLastName(String aName) { mLastName = aName; }
+
 
 }
