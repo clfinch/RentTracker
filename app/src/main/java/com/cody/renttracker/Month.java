@@ -1,5 +1,7 @@
 package com.cody.renttracker;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

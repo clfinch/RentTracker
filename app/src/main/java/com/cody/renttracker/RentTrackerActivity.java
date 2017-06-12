@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 @Author Cody Finch
 Purpose: This is the starting activity, it launches a fragment of the main hub page.
  */
-public class RentTrackerActivity extends AppCompatActivity {
+public class RentTrackerActivity extends SingleFragmentActivity {
 
 
     protected Fragment createFragment(){
